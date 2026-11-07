@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="256" height="256">
+  <defs>
+    <!-- Metallic Gold Bezel & Emblem Gradient -->
+    <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5B8" />
+      <stop offset="22%" stop-color="#E5C158" />
+      <stop offset="45%" stop-color="#B3821D" />
+      <stop offset="70%" stop-color="#FBF0A9" />
+      <stop offset="100%" stop-color="#8A5E0B" />
+    </linearGradient>
+
+    <!-- 3D Embossed Gold Gradient for Buffalo & BBD -->
+    <linearGradient id="goldEmboss" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF7C2" />
+      <stop offset="40%" stop-color="#E3B94B" />
+      <stop offset="80%" stop-color="#B8861B" />
+      <stop offset="100%" stop-color="#7D5406" />
+    </linearGradient>
+
+    <!-- Dark Emerald Outer Ring Gradient -->
+    <radialGradient id="outerGreen" cx="50%" cy="50%" r="50%">
+      <stop offset="75%" stop-color="#0A3B21" />
+      <stop offset="100%" stop-color="#041E10" />
+    </radialGradient>
+
+    <!-- Emerald Sunburst Center Field -->
+    <radialGradient id="innerEmerald" cx="48%" cy="44%" r="55%">
+      <stop offset="0%" stop-color="#227946" />
+      <stop offset="45%" stop-color="#0E4D29" />
+      <stop offset="85%" stop-color="#072D17" />
+      <stop offset="100%" stop-color="#031A0D" />
+    </radialGradient>
+
+    <!-- Cream-Gold Text Fill for Bottom Arc -->
+    <linearGradient id="creamGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="75%" stop-color="#F6E6B4" />
+      <stop offset="100%" stop-color="#CFA338" />
+    </linearGradient>
+
+    <!-- Bottom Arc Path for BUFFALO BIODIESEL INC. -->
+    <path id="bottomTextArc" d="M 55,256 A 201,201 0 1,0 457,256" fill="none" />
+  </defs>
+
+  <!-- 1. OUTER GOLD COIN BEZEL (Transparent outside circle) -->
+  <circle cx="256" cy="256" r="252" fill="#6E4904" />
+  <circle cx="256" cy="256" r="249" fill="url(#goldRim)" />
+  <circle cx="256" cy="256" r="236" fill="#593B02" />
+  <circle cx="256" cy="256" r="233" fill="url(#outerGreen)" />
+
+  <!-- 2. DASHED GOLD OUTER TRACK -->
+  <circle cx="256" cy="256" r="223" fill="none" stroke="url(#goldRim)" stroke-width="3.2" stroke-dasharray="9 6.8" />
+
+  <!-- 3. GOLD BEAD RING (Upper & Side Arc) -->
+  <path d="M 65,316 A 200,200 0 1,1 447,316" fill="none" stroke="#03180C" stroke-width="10" stroke-linecap="round" stroke-dasharray="0.1 15.7" transform="translate(0,2)" />
+  <path d="M 65,316 A 200,200 0 1,1 447,316" fill="none" stroke="url(#goldEmboss)" stroke-width="9" stroke-linecap="round" stroke-dasharray="0.1 15.7" />
+
+  <!-- 4. INNER GOLD DIVIDER & EMERALD COIN FACE -->
+  <circle cx="256" cy="256" r="184" fill="url(#goldRim)" />
+  <circle cx="256" cy="256" r="177" fill="#041F10" />
+  <circle cx="256" cy="256" r="174" fill="url(#innerEmerald)" />
+
+  <!-- 5. STYLIZED BUFFALO BIODIESEL EMBLEM (Drop Shadow Layer) -->
+  <g fill="#03170B" opacity="0.65" transform="translate(3, 5)">
+    <!-- Left Horn Shadow -->
+    <path d="M 183,167 C 171,132 175,92 202,62 C 197,94 198,118 212,143 C 201,135 194,130 189,125 C 187,139 186,153 183,167 Z" />
+    <!-- Right Horn Shadow -->
+    <path d="M 274,151 C 296,136 315,116 329,96 C 334,126 324,156 297,174 C 304,160 309,149 311,138 C 298,145 286,149 274,151 Z" />
+    <!-- Right Ear Tuft Shadow -->
+    <path d="M 303,172 L 363,191 L 302,206 L 323,190 Z" />
+    <!-- Forehead & Nose Bridge Shadow -->
+    <path d="M 258,131 C 212,135 193,172 183,225 C 179,246 168,255 153,261 L 164,273 C 183,260 194,244 199,218 C 207,174 224,148 258,131 Z" />
+    <!-- Brow & Eye Shadow -->
+    <path d="M 216,218 C 228,194 242,170 256,168 C 265,167 273,169 278,172 C 266,174 257,176 249,184 C 239,194 229,208 216,218 Z" />
+    <circle cx="253" cy="196" r="7.5" />
+    <!-- Nostril Ring Shadow -->
+    <path d="M 187,262 A 18,18 0 1,0 187,298 A 18,18 0 1,0 187,262 Z M 187,271 A 9,9 0 1,1 187,289 A 9,9 0 1,1 187,271 Z" />
+    <!-- Jawline & Infinity Spiral Shadow -->
+    <path d="M 148,276 C 149,308 176,326 206,322 C 238,318 262,282 287,256 C 304,238 327,236 338,253 C 349,270 338,296 316,300 C 299,303 288,291 291,278 L 272,282 C 269,305 291,322 318,319 C 351,315 369,280 355,246 C 341,214 301,214 273,244 C 248,270 229,301 201,304 C 181,306 166,294 164,276 Z" />
+    <circle cx="311" cy="264" r="9.5" />
+  </g>
+
+  <!-- 6. STYLIZED BUFFALO BIODIESEL EMBLEM (Metallic Gold Layer) -->
+  <g fill="url(#goldEmboss)" stroke="#FFF6B3" stroke-width="1" stroke-linejoin="round">
+    <!-- Left Horn -->
+    <path d="M 183,167 C 171,132 175,92 202,62 C 197,94 198,118 212,143 C 201,135 194,130 189,125 C 187,139 186,153 183,167 Z" />
+    <!-- Right Horn -->
+    <path d="M 274,151 C 296,136 315,116 329,96 C 334,126 324,156 297,174 C 304,160 309,149 311,138 C 298,145 286,149 274,151 Z" />
+    <!-- Right Ear Tuft -->
+    <path d="M 303,172 L 363,191 L 302,206 L 323,190 Z" />
+    <!-- Forehead & Nose Bridge -->
+    <path d="M 258,131 C 212,135 193,172 183,225 C 179,246 168,255 153,261 L 164,273 C 183,260 194,244 199,218 C 207,174 224,148 258,131 Z" />
+    <!-- Brow & Eye -->
+    <path d="M 216,218 C 228,194 242,170 256,168 C 265,167 273,169 278,172 C 266,174 257,176 249,184 C 239,194 229,208 216,218 Z" />
+    <circle cx="253" cy="196" r="7.5" />
+    <!-- Nostril Ring -->
+    <path d="M 187,262 A 18,18 0 1,0 187,298 A 18,18 0 1,0 187,262 Z M 187,271 A 9,9 0 1,1 187,289 A 9,9 0 1,1 187,271 Z" fill-rule="evenodd" />
+    <!-- Jawline & Infinity Spiral -->
+    <path d="M 148,276 C 149,308 176,326 206,322 C 238,318 262,282 287,256 C 304,238 327,236 338,253 C 349,270 338,296 316,300 C 299,303 288,291 291,278 L 272,282 C 269,305 291,322 318,319 C 351,315 369,280 355,246 C 341,214 301,214 273,244 C 248,270 229,301 201,304 C 181,306 166,294 164,276 Z" />
+    <circle cx="311" cy="264" r="9.5" />
+  </g>
+
+  <!-- 7. FLANKING GOLD LEAVES & "BBD" TICKER -->
+  <!-- Left Leaf -->
+  <path d="M 131,328 C 127,348 136,368 154,371 C 160,355 151,338 131,328 Z" fill="#03170B" opacity="0.65" transform="translate(2,4)" />
+  <path d="M 131,328 C 127,348 136,368 154,371 C 160,355 151,338 131,328 Z" fill="url(#goldEmboss)" stroke="#FFF6B3" stroke-width="1" />
+  <path d="M 136,338 Q 145,353 152,369" fill="none" stroke="#072D17" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Right Leaf -->
+  <path d="M 381,328 C 385,348 376,368 358,371 C 352,355 361,338 381,328 Z" fill="#03170B" opacity="0.65" transform="translate(2,4)" />
+  <path d="M 381,328 C 385,348 376,368 358,371 C 352,355 361,338 381,328 Z" fill="url(#goldEmboss)" stroke="#FFF6B3" stroke-width="1" />
+  <path d="M 376,338 Q 367,353 360,369" fill="none" stroke="#072D17" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- "BBD" Center Typography -->
+  <text x="259" y="388" font-family="Arial Black, Impact, Arial, sans-serif" font-size="68" font-weight="900" letter-spacing="2" text-anchor="middle" fill="#03170B" opacity="0.7">BBD</text>
+  <text x="256" y="384" font-family="Arial Black, Impact, Arial, sans-serif" font-size="68" font-weight="900" letter-spacing="2" text-anchor="middle" fill="url(#goldEmboss)" stroke="#FFF6B3" stroke-width="1">BBD</text>
+
+  <!-- 8. CURVED BOTTOM TEXT: "BUFFALO BIODIESEL INC." -->
+  <text font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="25" font-weight="900" letter-spacing="3.2" fill="#021209" opacity="0.85" transform="translate(2,3)">
+    <textPath href="#bottomTextArc" startOffset="50%" text-anchor="middle">BUFFALO BIODIESEL INC.</textPath>
+  </text>
+  <text font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="25" font-weight="900" letter-spacing="3.2" fill="url(#creamGold)" stroke="#9A6E14" stroke-width="0.7">
+    <textPath href="#bottomTextArc" startOffset="50%" text-anchor="middle">BUFFALO BIODIESEL INC.</textPath>
+  </text>
+</svg>
